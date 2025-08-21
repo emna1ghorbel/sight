@@ -164,7 +164,7 @@ h6 {
 .get-started-btn {
   margin-left: 30px;
   background:var(--color-rd-blue-400);
-  color: #fff;
+  color:var(--color-rd-blue-400);
   border-radius: 4px;
   padding: 8px 25px;
   white-space: nowrap;
