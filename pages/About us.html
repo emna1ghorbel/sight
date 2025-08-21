@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>IEEE ENIS SIGHT - Équipe</title>
+  <meta content="Site officiel IEEE ENIS SIGHT" name="description">
+  <meta content="IEEE, ENIS, SIGHT, Technology, Engineering" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+<section id="bar-header">
+  <div class="bar-content">
+    
+    <!-- Texte -->
+    <div class="text-block">
+      <h2>ABOUT US</h2>
+      <h4>Learn about our team, history, goals and more!</h4>
+    </div>
+
+   
+
+  </div>
+</section>
+
+
+<section id="team">
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+    <!-- Card 1 -->
+    <div class="team-card">
+      <img src="/assets/img/team/DSC_6501.JPG" alt="Dorra Jlassi">
+      <div class="overlay">
+        <a href="mailto:exemple1@mail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/exemple1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="team-info">
+        <h3>DORRA JLASSI</h3>
+        <p>CHAIRWOMAN</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="team-card">
+      <img src="/assets/img/team/DSC_6431.JPG" alt="Ismail Kassis">
+      <div class="overlay">
+        <a href="mailto:exemple1@mail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/exemple1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="team-info">
+        <h3>ISMAIL KASSIS</h3>
+        <p>VICE CHAIR</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="team-card">
+      <img src="/assets/img/team/DSC_6458.JPG" alt="Emna Ghorbel">
+      <div class="overlay">
+        <a href="mailto:exemple2@mail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/exemple2" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="team-info">
+        <h3>EMNA GHORBEL</h3>
+        <p>WEB MASTER</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="team-card">
+      <img src="/assets/img/team/DSC_6504.JPG" alt="Mabrouka Tlili">
+      <div class="overlay">
+        <a href="mailto:exemple1@mail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/exemple1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="team-info">
+        <h3>MABROUKA TLILI</h3>
+        <p>TREASURER</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="team-card">
+      <img src="/assets/img/team/DSC_6507.JPG" alt="Emna Ammar">
+      <div class="overlay">
+        <a href="mailto:exemple1@mail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/exemple1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="team-info">
+        <h3>EMNA AMMAR</h3>
+        <p>SECRETARY</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="footer-placeholder"></div>
+<script>
+  // Charger le header
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+
+      // Maintenant que le header est chargé, sélectionner les liens
+      const navLinks = document.querySelectorAll('.navbar ul li a');
+      navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+          link.classList.add('active'); 
+        }
+      });
+    });
+
+ 
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
