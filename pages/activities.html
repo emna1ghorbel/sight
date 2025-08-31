@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>IEEE ENIS SIGHT - Équipe</title>
-  <meta content="Site officiel IEEE ENIS SIGHT" name="description">
-  <meta content="IEEE, ENIS, SIGHT, Technology, Engineering" name="keywords">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-
+  <title>IEEE ENIS SIGHT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <!-- Vendor CSS Files -->
@@ -22,17 +24,15 @@
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
-  <div id="header-placeholder"></div>
- 
+ <div id="header-placeholder"></div>
 <section id="bar-header">
   <div class="bar-content">
     
     <!-- Texte -->
     <div class="text-block">
-      <h2>our activity</h2>
-      <h4>We’re here to help and answer your questions</h4>
+      <h2>OUR ACTIVITY</h2>
+      <h4>Learn about our team, history, goals and more!</h4>
     </div>
 
    
@@ -40,176 +40,433 @@
   </div>
 </section>
 
-  <section id="activity" class="activity">
-    
-    
-      <div class="section-title">
-        <h2>TECHNICAL ACTIVITIES</h2>
-        <p>For any further inquiries or to get in touch, please fill out the form below. We look forward to hearing from you and addressing your questions.</p>
-      </div>
 
-      <!-- Navigation -->
-      <div class="nav-button prev-button" onclick="prevActivity()">&#10094;</div>
-      <div class="nav-button next-button" onclick="nextActivity()">&#10095;</div>
+  <section class="activity" data-section="technical">
+  <div class="section-title">
+    <h2>TECHNICAL ACTIVITIES</h2>
+    <p>Explore our technical events and projects</p>
+  </div>
 
-      <!-- Activity 1 -->
-      <div class="activity-slide">
-        <div class="image-carousel-container">
-          <div class="image-carousel" id="carousel1">
-            <img src="/assets/img/our gallery/IOT in Smart Farming.png" class="active">
-           
-          </div>
-          <div class="image-indicators" id="indicators1"></div>
-        </div>
-        <div class="description">
-          <h2>IOT in Smart Farming</h2>
-          <p>IoT in Smart Farming", organized in collaboration with IEEE SIGHT ENIS SBG and IEEE PES ENIS SBC, introduced participants to the role of IoT in modern agriculture. Led by Ms. Amina Kessentini, the session covered IoT and AI applications in energy, followed by an exploration of sensors, boards like the ESP32, and hands-on prototype building. Participants created smart farming models to monitor soil moisture, temperature, and light, gaining practical skills in coding, circuit design, and data collection. The event concluded with a collaborative project session, highlighting the potential of IoT to drive sustainable farming solutions.</p>
-        </div>
-      </div>
+  <div class="nav-button prev-button" onclick="prevActivity('technical')">&#10094;</div>
+  <div class="nav-button next-button" onclick="nextActivity('technical')">&#10095;</div>
 
-      <!-- Activity 2 -->
-      <div class="activity-slide" style="display:none;">
-        <div class="image-carousel-container">
-          <div class="image-carousel" id="carousel2">
-            <img src="https://picsum.photos/600/400?random=4" class="active">
-            <img src="https://picsum.photos/600/400?random=5">
-            <img src="https://picsum.photos/600/400?random=6">
-          </div>
-          <div class="image-indicators" id="indicators2"></div>
-        </div>
-        <div class="description">
-          <h2>Turning Waste into Worth: A Journey Toward Sustainable Solutions</h2>
-          <p>Led by Mr. Ramzi Halouani, the session offered insightful exploration into the global waste crisis and introduced innovative solutions for sustainable waste management. Emphasizing practices like reduction, recycling, and creative upcycling, the workshop inspired participants to embrace eco-conscious habits and take on active roles as sustainability advocates in their communities.</p>
-        </div>
+  <!-- Slide 1 -->
+  <div class="activity-slide">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/IOT in Smart Farming.png" class="active">
       </div>
+    </div>
+    <div class="description">
+      <h2>IOT in Smart Farming</h2>
+      <p>IoT in Smart Farming", organized in collaboration with IEEE SIGHT ENIS SBG and IEEE PES ENIS SBC, introduced participants to the role of IoT in modern agriculture. Led by Ms. Amina Kessentini, the session covered IoT and AI applications in energy, followed by an exploration of sensors, boards like the ESP32, and hands-on prototype building. Participants created smart farming models to monitor soil moisture, temperature, and light, gaining practical skills in coding, circuit design, and data collection. The event concluded with a collaborative project session, highlighting the potential of IoT to drive sustainable farming solutions.</p>
+    </div>
+  </div>
 
-      <!-- Activity 3 -->
-      <div class="activity-slide" style="display:none;">
-        <div class="image-carousel-container">
-          <div class="image-carousel" id="carousel3">
-            <img src="https://picsum.photos/600/400?random=7" class="active">
-            <img src="https://picsum.photos/600/400?random=8">
-            <img src="https://picsum.photos/600/400?random=9">
-          </div>
-          <div class="image-indicators" id="indicators3"></div>
-        </div>
-        <div class="description">
-          <h2>Activity 3</h2>
-          <p>Description de l'activité 3...</p>
-        </div>
+  <!-- Slide 2 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/AI and IoT.png" class="active">
       </div>
-   
+    </div>
+    <div class="description">
+      <h2>AI and IoT in Modern Agriculture</h2>
+      <p>Ms. Amina Kessentini conducted a session on the integration of Artificial Intelligence (AI) and the Internet of Things (IoT) in agriculture. She highlighted how these emerging technologies are transforming the future of farming by enabling smarter real-time monitoring.</p>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Turning Waste.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Turning Waste into Worth: A Journey Toward Sustainable Solutions</h2>
+      <p>Led by Mr. Ramzi Halouani, the session offered insightful exploration into the global waste crisis and introduced innovative solutions for sustainable waste management. Emphasizing practices like reduction, recycling, and creative upcycling, the workshop inspired participants to embrace eco-conscious habits and take on active roles as sustainability advocates in their communities.</p>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Turning Waste.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>UNIFIED SIGHT</h2>
+      <p>UNIFIED SIGHT brought together 12 IEEE SIGHT Groups across Tunisia for a comprehensive event dedicated to advancing humanitarian technology initiatives. The event aimed to introduce the IEEE Sight Group to prospective members, highlighed the strategic importance of humanitarian technology development, facilitated the creation of new SIGHT groups within Student Branches</p>
+    </div>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+     <div class="image-carousel">
+  <img src="../assets/img/our gallery/Radiology and Healthcare.png" class="active">
+  <img src="../assets/img/our gallery/Radiology and Healthcare (2).png">
+</div>
+
+    </div>
+    <div class="description">
+      <h2>AI’s Impact on Radiology and Healthcare</h2>
+      <p>These sessions, led by Mrs. Darine Kabsi | In collaboration with IEEE ENIS EMBS SBC<br>
+
+Session 1: Covered AI applications in medical imaging, highlighting improved diagnostic accuracy, faster workflows, and support for clinical decision-making. Ethical challenges and implementation hurdles were also discussed.<br>
+
+Session 2: Showcased recent AI projects in radiology, including real-world applications, research directions, and collaboration opportunities to advance AI-driven solutions in healthcare.</p>
+ 
+    </div>
+  </div>
+</section>
+  
+  <section class="activity" data-section="NONTECH">
+    <div class="section-title">
+      <h2>NON TECHNICAL ACTIVITIES</h2>
+      <p>Hands-on learning sessions for innovation</p>
+    </div>
+
+    <div class="nav-button prev-button" onclick="prevActivity('NONTECH')">&#10094;</div>
+    <div class="nav-button next-button" onclick="nextActivity('NONTECH')">&#10095;</div>
+
+     <!-- Slide 1 -->
+   <!-- Slide 1 -->
+  <div class="activity-slide">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/IEEE TALKS Chapters’ Fest and Pathways to Success.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>IEEE TALKS: Chapters’ Fest and Pathways to Success</h2>
+      <p>Co-Hosted with The IEEE ENIS Student Branch, IEEE TALKS: Chapters’ Fest and Pathways to Success at the National Engineering School of Sfax. The event featured inspiring talks, a panel with alumni leaders, a musical performance, and chapter showcases—introducing new members to the vibrant world of IEEE and the opportunities it offers for growth, innovation, and leadership</p>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Workshop Exploring Social and Solidarity Economy.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Workshop: Exploring Social and Solidarity Economy</h2>
+      <p>Exploring Social and Solidarity Economy was a workshop organized by IEEE SIGHT ENIS SBG and IEEE WIE ENIS SAG. Participants explored real-world examples of successful SSE initiatives. It was an inspiring session that not only broadened perspectives but also encouraged attendees to drive meaningful economic and social change in their environments.</p>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Visit to youth preservation center.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Visit to youth preservation center</h2>
+      <p>Our SIGHT SBG, in collaboration with the IEEE PES and RAS Chapters of the ENIS Student Branch, proudly secured third place in the Climate Change Technical Challenge at TSYP12! 
+As part of this initiative, we visited the Youth Preservation Center, where we introduced children to the causes of climate change and encouraged them to share ideas for reducing its impact. We also presented our innovative and sustainable solution, aiming to raise awareness and inspire climate action. 
+This achievement reflects our commitment to engineering excellence, community involvement, and real-world impact.</p>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Powering Change IEEE & Baya Association Launch Sustainability Challenge on ESS and Recycling.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Powering Change: IEEE & Baya Association Launch Sustainability Challenge on ESS and Recycling</h2>
+      <p>The meeting, held between the Baya Association, officers of IEEE WIE ENIS SAG, IEEE SIGHT ENIS SBG, IEEE ENETCOM SB and IEEE WIE ENETCOM SAG focused on discussing the upcoming event and the awareness sessions on 'ESS' and 'Trash Recycling.' The participants also addressed the call for candidates to apply and complete the competition form, while clarifying the details regarding the prizes for the winners and the conditions for their release. Additionally, the meeting served as an invitation for students to participate in the competition.</p>
+    </div>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Gathering with IEEE Tunisia Section SIGHT Chair Exploring Impact & Innovation .png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Gathering with IEEE Tunisia Section SIGHT Chair: Exploring Impact & Innovation </h2>
+      <p>We had an insightful discussion with Mrs Amira ouerfelli , Chair of IEEE Tunisia Section SIGHT, to explore the mission, impact, and benefits of IEEE SIGHT. The conversation highlighted how SIGHT empowers engineers and technologists to develop sustainable and humanitarian-driven solutions for communities in need.
+Additionally, we discussed Take4Good, an initiative focused on leveraging technology for positive social impact. The exchange of ideas emphasized the importance of collaboration, innovation, and community engagement in driving meaningful change.
+This meeting reinforced our shared commitment to using technology as a force for good and inspired new possibilities for impactful projects ahead</p>
+    </div>
+  </div>
+
+   <!-- Slide 6 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Upcoming Plans and Projects.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Upcoming Plans and Projects</h2>
+      <p>In this insightful meeting, the IEEE ENIS Student Branch (SB) hosted a session where the IEEE Special Interest Group on New Technologies (SIGHT) shared their vision for the future. Members discussed upcoming projects, innovations, and their strategic goals aimed at advancing technology and creating impactful solutions. The event provided attendees with a glimpse into the exciting initiatives planned by SIGHT, fostering collaboration, creativity, and inspiration within the IEEE community</p>
+
+    </div>
+  </div>
+
+  
+   <!-- Slide 7 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Brainstorming Solutions for the Technical Challenge of SDC 3.0.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Brainstorming Solutions for the Technical Challenge of SDC 2.0</h2>
+      <p>The IEEE SIGHT ENIS SAG organized a productive and insightful session focused on the technical challenges of SDC 2.0. Participants from the student branch explored key obstacles, exchanged innovative ideas, and collaborated on practical approaches to improve the framework.
+Experts and newcomers alike shared their perspectives, contributing to a rich, solution-oriented discussion. The session fostered creativity, encouraged teamwork, and sparked new directions for the continued development of SDC 3.0.
+Together, we took a step forward in shaping the future of smart, scalable systems.</p>
+
+    </div>
+  </div>
+
+    </div>
   </section>
+   <section class="activity" data-section="SDC">
+    <div class="section-title">
+      <h2>SDC  challenge</h2>
+      <p>Hands-on learning sessions for innovation</p>
+    </div>
+
+    <div class="nav-button prev-button" onclick="prevActivity('SDC')">&#10094;</div>
+    <div class="nav-button next-button" onclick="nextActivity('SDC')">&#10095;</div>
+
+    <div class="activity-slide">
+      <div class="image-carousel-container">
+          <div class="image-carousel">
+          <img src="../assets/img/our gallery/sdc3.0/1.png" class="active">
+          <img src="../assets/img/our gallery/sdc3.0/2.png" >
+          <img src="../assets/img/our gallery/sdc3.0/3.png">
+        </div>
+        
+        
+      </div>
+      <div class="description">
+    <h2>SDC 3.0 Challenge</h2>
+    <p>We participated in SDC 3.0 and proudly secured <strong>1st place in the Non-Technical Challenge</strong>. Our innovative approach and teamwork stood out, showcasing the talent and dedication of our IEEE SIGHT ENIS team.</p>
+  </div>
+    </div>
+
+    <div class="activity-slide" style="display:none;">
+      <div class="image-carousel-container">
+      <div class="image-carousel">
+          <img src="../assets/img/our gallery/sdc2.0/1.png" class="active">
+          <img src="../assets/img/our gallery/sdc2.0/2.png"  >
+          <img src="../assets/img/our gallery/sdc2.0/3.png" >
+          <img src="../assets/img/our gallery/sdc2.0/3.png">
+        </div>
+        
+      </div>
+     <div class="description">
+    <h2>SDC 2.0 Challenge</h2>
+    <p>We participated in <strong>SDC 2.0</strong> and proudly secured <strong>4th place in the Non-Technical Challenge</strong>. This achievement highlights our teamwork, creativity, and dedication in tackling the challenge successfully.</p>
+  </div>
+    </div>
+  </section>
+<section class="activity" data-section="AWARDS">
+  <div class="section-title">
+    <h2>AWARDS</h2>
+    <p>Hands-on learning sessions for innovation</p>
+  </div>
+
+  <div class="nav-button prev-button" onclick="prevActivity('AWARDS')">&#10094;</div>
+  <div class="nav-button next-button" onclick="nextActivity('AWARDS')">&#10095;</div>
+
+  <!-- Slide 1 -->
+  <div class="activity-slide">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Participation and winning 3rd place in TSYP12 challenge.png" class="active">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Participation and winning 3rd place in TSYP12 challenge</h2>
+      <p>
+        We, in collaboration with the IEEE PES and Ras chapters of the National School of Engineering in Sfax (ENIS) Student Branch, proudly secured third place in the climate change technical challenge at TSYP12. Their collaborative efforts resulted in an innovative project addressing critical climate issues with practical, sustainable solutions. This achievement showcases the technical expertise, teamwork, and dedication of these IEEE groups, highlighting their commitment to fostering engineering excellence and addressing real-world problems.
+      </p>
+    </div>
+  </div>
+
+
+</section>
+
+  
+   <section class="activity" data-section="PROJECT">
+  <div class="section-title">
+    <h2>projects</h2>
+    <p>Hands-on learning sessions for innovation</p>
+  </div>
+
+  <div class="nav-button prev-button" onclick="prevActivity('PROJECT')">&#10094;</div>
+  <div class="nav-button next-button" onclick="nextActivity('PROJECT')">&#10095;</div>
+
+  <!-- Slide 1 -->
+  <div class="activity-slide">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/ESS RECY LAB PROJECT/1.png" class="active">
+        <img src="../assets/img/our gallery/ESS RECY LAB PROJECT/2.png" >
+        <img src="../assets/img/our gallery/ESS RECY LAB PROJECT/ESS RECY LAB PROJECT (1).png" >
+        <img src="../assets/img/our gallery/ESS RECY LAB PROJECT/ESS RECY LAB PROJECT.png" >
+      </div>
+    </div>
+    <div class="description">
+      <h2>ESS RECY LAB PROJECT</h2>
+      <p>
+        ESS RECY LAB is an eco-conscious initiative launched with the support of IEEE ENIS SB, WIE ENIS, WIE ENET’COM, and PES, aiming to promote plastic recycling and sustainable innovation in the engineering community. Held on November 23, 2024, at Hotel Palais Royal, the event challenged students to design smart sorting devices called "Waste Wizards" to separate plastic and paper waste. The competition encouraged environmental responsibility, creativity, and hands-on learning. The IEEE ENIS Student Branch won the challenge with their standout prototype, demonstrating both innovation and commitment to sustainability.
+      </p>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/Smart Farm/1.png" class="active">
+        <img src="../assets/img/our gallery/Smart Farm/2.png" >
+        <img src="../assets/img/our gallery/Smart Farm/3.png" >
+      </div>
+    </div>
+    <div class="description">
+      <h2>Smart Farm</h2>
+      <p>
+        We organized the event "IoT in Smart Farming," in collaboration with IEEE PES, where participants explored the transformative role of IoT in agriculture. They were introduced to essential IoT components—including sensors, boards, and the ESP32—before diving into a hands-on workshop, where they built smart farming prototypes to monitor key environmental factors like soil moisture, temperature, and light. The event concluded with a collaborative project, where teams developed solutions to real farming challenges. Participants gained hands-on experience in coding, circuit design, and data collection, leaving inspired to innovate in sustainable agriculture.
+      </p>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="activity-slide" style="display:none;">
+    <div class="image-carousel-container">
+      <div class="image-carousel">
+        <img src="../assets/img/our gallery/_ TSYP12 Challenge (PES & RAS& SIGHT)/1.png" class="active">
+        <img src="../assets/img/our gallery/_ TSYP12 Challenge (PES & RAS& SIGHT)/2.png" >
+      </div>
+    </div>
+    <div class="description">
+      <h2>TSYP12 Challenge (PES & RAS & SIGHT)</h2>
+      <p>
+        As part of the TSYP Technical Challenge, our team developed a Smart Waste Bin system aimed at optimizing waste collection through intelligent monitoring and data-driven decision-making. The project aligns with Tunisia’s environmental needs and the UN Sustainable Development Goals, focusing on cleaner, more sustainable cities. Backed by the humanitarian spirit of our IEEE SIGHT group, we ensured the solution was not only technically innovative but also socially impactful, making waste management more efficient in underserved communities and raising awareness about responsible waste practices. Our commitment to both technology and community impact earned us a place in the Top 3 winners of the challenge, proving that engineering can drive real change when guided by humanitarian values.
+      </p>
+    </div>
+  </div>
+</section>
+
+  
 
   <div id="footer-placeholder"></div>
 
-   <script>
-    // Variables
-    let currentActivity = 0;
-    const activities = document.querySelectorAll("#activity .activity-slide");
-    const activityInterval = 4000; 
-    const imageInterval = 2500;
-    let autoChangeInterval;
-    let timerInterval;
+  <!-- ================= JS ================= -->
+<script>
+let activityState = {};
+let slideIntervals = {}; // pour stocker les intervalles d'autoplay
 
-    // Initialisation indicateurs
-    function initImageCarousels() {
-      activities.forEach((slide, i) => {
-        const carousel = slide.querySelector(".image-carousel");
-        const indicatorsContainer = slide.querySelector(".image-indicators");
-        const images = carousel.querySelectorAll("img");
-        images.forEach((_, idx) => {
-          const indicator = document.createElement("div");
-          indicator.classList.add("image-indicator");
-          if (idx === 0) indicator.classList.add("active");
-          indicator.addEventListener("click", () => showImage(i, idx));
-          indicatorsContainer.appendChild(indicator);
-        });
-      });
+function initActivities(section) {
+  const sectionId = section.dataset.section;
+  const slides = section.querySelectorAll(".activity-slide");
+  activityState[sectionId] = { current: 0, activities: slides };
+
+  slides.forEach((slide, i) => {
+    const carousel = slide.querySelector(".image-carousel");
+    const images = carousel.querySelectorAll("img");
+
+    // Auto défilement images dans le carousel
+    if (true) {
+      let currentImg = 0;
+      setInterval(() => {
+        currentImg = (currentImg + 1) % images.length;
+        images.forEach(img => img.classList.remove("active"));
+        images[currentImg].classList.add("active");
+      }, 2000);
     }
+  });
 
-    function startImageCarousel(carouselId) {
-      const carousel = document.getElementById(carouselId);
-      const images = carousel.querySelectorAll("img");
-      const indicators = carousel.parentElement.querySelectorAll(".image-indicator");
-      let index = 0;
-      return setInterval(() => {
-        images[index].classList.remove("active");
-        indicators[index].classList.remove("active");
-        index = (index + 1) % images.length;
-        images[index].classList.add("active");
-        indicators[index].classList.add("active");
-      }, imageInterval);
-    }
+  showActivity(sectionId, 0);
 
-    function showImage(slideIndex, imgIndex) {
-      const slide = activities[slideIndex];
-      const images = slide.querySelectorAll("img");
-      const indicators = slide.querySelectorAll(".image-indicator");
-      images.forEach(img => img.classList.remove("active"));
-      indicators.forEach(ind => ind.classList.remove("active"));
-      images[imgIndex].classList.add("active");
-      indicators[imgIndex].classList.add("active");
-    }
+  // Auto défilement slides
+  if (slides.length > 1 ) {
+    slideIntervals[sectionId] = setInterval(() => {
+      nextActivity(sectionId);
+    }, 8000);
+  }
 
-    function showActivity(index) {
-      activities.forEach((act, i) => act.style.display = i === index ? "flex" : "none");
-      currentActivity = index;
-    }
+  // Pause au mousedown
+  section.addEventListener("mousedown", () => {
+    clearInterval(slideIntervals[sectionId]);
+  });
 
-    function nextActivity() {
-      showActivity((currentActivity + 1) % activities.length);
-    }
+  // Reprendre au mouseup et passer à la slide suivante
+  section.addEventListener("mouseup", () => {
+    nextActivity(sectionId);
+    slideIntervals[sectionId] = setInterval(() => {
+      nextActivity(sectionId);
+    }, 4000);
+  });
 
-    function prevActivity() {
-      showActivity((currentActivity - 1 + activities.length) % activities.length);
-    }
+  // Attacher les boutons Next/Prev
+  const nextBtn = section.querySelector(".next-button");
+  const prevBtn = section.querySelector(".prev-button");
 
-    // Init
-    window.addEventListener("DOMContentLoaded", () => {
-      initImageCarousels();
-      activities.forEach((slide, i) => startImageCarousel(`carousel${i+1}`));
-      autoChangeInterval = setInterval(nextActivity, activityInterval);
+  if (nextBtn) nextBtn.addEventListener("click", () => nextActivity(sectionId));
+  if (prevBtn) prevBtn.addEventListener("click", () => prevActivity(sectionId));
+}
 
-      // Pause le carousel lorsqu'on appuie sur le cadre d'une activité
-      const activitySection = document.getElementById("activity");
+// Affiche la slide spécifique
+function showActivity(sectionId, index) {
+  const state = activityState[sectionId];
+  state.activities.forEach((act, i) => act.style.display = i === index ? "flex" : "none");
+  state.current = index;
+}
 
-      activitySection.addEventListener("mousedown", () => {
-        clearInterval(autoChangeInterval); // pause le défilement automatique
-      });
+// Slide suivante
+function nextActivity(sectionId) {
+  const state = activityState[sectionId];
+  showActivity(sectionId, (state.current + 1) % state.activities.length);
+}
 
-      activitySection.addEventListener("mouseup", () => {
-        autoChangeInterval = setInterval(nextActivity, activityInterval); // relance le défilement
-      });
+// Slide précédente
+function prevActivity(sectionId) {
+  const state = activityState[sectionId];
+  showActivity(sectionId, (state.current - 1 + state.activities.length) % state.activities.length);
+}
 
-      // Pour les mobiles (touch)
-      activitySection.addEventListener("touchstart", () => {
-        clearInterval(autoChangeInterval);
-      });
-      activitySection.addEventListener("touchend", () => {
-        autoChangeInterval = setInterval(nextActivity, activityInterval);
-      });
+// Initialisation au chargement
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".activity").forEach(section => {
+    initActivities(section);
+  });
+});
+
+// Charger header et footer
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header-placeholder').innerHTML = data;
+    const navLinks = document.querySelectorAll('.navbar ul li a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) link.classList.add('active');
     });
+  });
 
-    // Charger le header
-    fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
+fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('footer-placeholder').innerHTML = data;
+  });
 
-        const navLinks = document.querySelectorAll('.navbar ul li a');
-        navLinks.forEach(link => {
-          if (link.href === window.location.href) {
-            link.classList.add('active'); 
-          }
-        });
-      });
-
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
 </script>
 
 </body>
