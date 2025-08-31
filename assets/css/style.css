@@ -741,6 +741,7 @@ section {
 }
 
 .section-title h2 {
+  color: var(--color-rd-black);
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
