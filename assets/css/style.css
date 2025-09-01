@@ -2517,6 +2517,7 @@ section {
  #gallery {
       background: white;
       padding: 4rem 0;
+      overflow-x: auto;
     }
 
     #gallery h2 {
